@@ -297,7 +297,7 @@ if vim.o.background == "dark" then
         --- fzf-lua
         FzfLuaBorder = { fg = "#2b3d40" },
         --- mini.nvim
-        MiniPickMatchCurrent  = { fg = "#f09942" },
+        MiniPickMatchCurrent = { fg = "#f09942" },
         --- Neogit
         NeogitPopupActionDisabled = { fg = darker_fg },
         NeogitPopupActionKey = { fg = ansi.magenta },
@@ -403,6 +403,7 @@ if vim.o.background == "dark" then
         ["@lsp.typemod.type.declaration"] = { fg = def_fg },
     }
 else
+    -- Light mode
     -- terminal colors
     vim.g.terminal_color_0 = "#000000"
     vim.g.terminal_color_1 = "#aa3731"
@@ -422,7 +423,7 @@ else
     vim.g.terminal_color_15 = "#f7f7f7"
 
     -- colors
-    local bg = "#f7f7f7"
+    local bg = "#efebe3"
     local fg = "#000000"
     local punct_fg = "#777777"
     local def_fg = "#325cc0"
@@ -472,7 +473,7 @@ else
         -- lCursor      { }, -- the character under the cursor when |language-mapping| is used (see 'guicursor')
         -- CursorIM     { }, -- like Cursor, but used when in IME mode |CursorIM|
         CursorColumn = { bg = "#E2EEEE" },
-        CursorLine = { bg = "#E2EEEE" },
+        CursorLine = { bg = "#d8d8d8" },
         Directory = { fg = ansi.blue },
         DiffAdd = { bg = "#ADFFB7", fg = "#0A7816" },
         DiffDelete = { bg = "#F8B28F", fg = "#872C28" },
