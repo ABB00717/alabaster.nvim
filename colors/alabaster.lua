@@ -458,7 +458,7 @@ else
     local hint = ansi.blue
     local info = "#278C00"
     local comment_fg = vim.g.alabaster_dim_comments and dim_comment or comment
-    local pmenu_bg = "#e7e7e7"
+    local pmenu_bg = "#d8d8d8"
     local float_bg = vim.g.alabaster_floatborder and bg or pmenu_bg
     local floatborder = vim.g.alabaster_floatborder and { bg = bg, fg = "#999999" }
         or {
